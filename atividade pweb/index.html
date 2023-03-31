@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATV05 - LEO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <center><h3>Escola Virtual</h3></center>
+            <center><h5>Formulário de Pré-Matricula</h5></center>
+        </h1>
+    </header>
+    <hr>
+    <div>
+        <form action="submit">
+            <fieldset class="dadosPessoais">
+                <b>Dados pessoais: </b></br>
+                <center>
+                    <label class="campo__etiqueta" for="nome">Nome do aluno:</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <label class="campo__etiqueta" for="nome">Nascimento (dd/mm/aaaa):</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" size="1" maxlength="2" autocomplete="off" required/> / <input name="nome" id="nome" class="campo__escrita" type="month" size="1" maxlength="2" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <label class="campo__etiqueta" for="nome">Nome da mãe:</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <label class="campo__etiqueta" for="nome">Nome da pai:</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <label class="campo__etiqueta" for="nome">Telefone DDD (</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" size="1" maxlength="2" autocomplete="off" required/> ) Tel: <input name="nome" id="nome" class="campo__escrita" type="text" size="6" maxlength="9" autocomplete="off" required/> Ramal: <input name="nome" id="nome" class="campo__escrita" type="text" size="2" maxlength="2" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <label class="campo__etiqueta" for="nome">Email:</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="email" minlength="3" autocomplete="off" required/>
+                    <span class="mensagem-erro"></span><br>
+                    <hr>
+                </center>
+            
+            
+                <b>Informações da matrícula: </b></br>
+                Série: 
+                <select name="niveis">
+                    <option value="infantil">Pré-escolar</option>
+                    <option value="ensinoFundamental">Fundamental</option>
+                    <option value="ensinoEJA">EJA</option>
+                    <option value="técnico">Técnico</option>
+                </select>
+                <div class="turnosDisponiveis">
+                    Turno: <br>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="turnoManha" name="manha">
+                            <label for="scales">Manhã</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="turnoTarde" name="tarde">
+                            <label for="scales">Tarde</label>
+                        </li>
+                    </ul>
+                </div>
+                    
+                <div class="atividadesExtracurriculares">
+                    Atividades extracurriculares: <br>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="atvInfo" name="Informatica">
+                            <label for="scales">Informática</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="atvMusica" name="Musica">
+                            <label for="scales">Música</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="atvMusica" name="Balet">
+                            <label for="scales">Balet</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="atvPintura" name="Pintura">
+                            <label for="scales">Pintura</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="atvJudo" name="Judo">
+                            <label for="scales">Judô</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="atvFut" name="Futebol">
+                            <label for="scales">Futebol</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <div>
+                <center>
+                    <input value="Enviar" class="formulario_botao" id="Enviar" data-botao-enviar type="submit">
+                    <span class="mensagem-erro"></span>
+                    <input value="Limpar" class="formulario_botao" id="Limpar" data-botao-enviar type="reset">
+                    <span class="mensagem-erro"></span>
+                </center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

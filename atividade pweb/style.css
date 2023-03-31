@@ -1,0 +1,38 @@
+#turnoManha{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid blue;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}#turnoTarde{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid blue;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+#turnoManha:checked {
+    background-color: blue;
+}#turnoTarde:checked {
+    background-color: blue;
+}.atividadesExtracurriculares{
+    margin-left: 70%;
+    margin-top: -10%;
+}.atividadesExtracurriculares li{
+    list-style: none;
+}.turnosDisponiveis{
+    margin-left: 30%;
+    margin-top: -1%;
+}.turnosDisponiveis li{
+    list-style: none;
+}
